@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TodoMVC</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="module" src="model.js"></script>
+        <script type="module" src="controller.js"></script>
+        <script type="module" src="view.js"></script>
+    </head>
+    <body>
+        <main>
+            <header>
+                todos
+            </header>
+            <section>
+                <div class="todoInput">
+                    <span class="selectAll">V</span>
+                    <input type="text" name="todoInput" id="" class="todoInputField" placeholder="What needs to be done?">
+                    <button class="add">+</button>
+                    <div class="popup">
+                        <span>Link already exists.</span>
+                    </div>
+                </div>
+            </section>
+            <div class="lowerContainer">
+                <div class="todoList">
+                </div>
+                <footer>
+                    <span class="itemsLeft">0 items left</span>
+                    <div class="stateOfList">
+                        <a href="#" class="all selected">All</a>
+                        <a href="#" class="active">Active</a>
+                        <a href="#" class="completed">Completed</a>
+                    </div>
+                    <button class="clearButton">Clear Completed</button>
+                </footer>
+            </div>
+        </main>
+    </body>
+</html>
